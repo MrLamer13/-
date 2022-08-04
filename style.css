@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: Lato;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.header__top {
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ececec;
+}
+
+.header__top_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top_left {
+    display: flex;
+}
+
+.header__top_right {
+    display: flex;
+}
+
+.header__top_logo_img {
+    padding-top: 25px;
+    padding-right: 13px;
+}
+
+.header__top_logo_text {
+    padding-top: 45px;
+    padding-right: 37px;
+}
+
+.logo_link {
+    text-decoration: none;
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+}
+
+.logo_d {
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.header__top_form {
+    display: flex;
+    margin: 32px 0 30px 0;
+}
+
+.browse_button {
+    height: 38px;
+    padding: 3px 8px 0 15px;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+    text-decoration: none;
+}
+
+.input_search {
+    width: 279px;
+    height: 38px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+    padding-left: 16px;
+    margin: 0 -1px 0 -1px;
+}
+
+.input_search::placeholder {
+    color: #a4a4a4;
+}
+
+
+.button_search {
+    width: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.basket {
+    margin-top: 40px;
+}
+
+.account_button {
+    margin: 36px 0 0 26px;
+}
+
+.account_button_link {
+    padding: 13px 12px 11px 19px;
+    background-color: #f16d7f;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    height: 51px;
+}
+
+.header__menu_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.header__menu_links {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    background-color: #ffffff;
+}
+
+.header__menu_link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.header__bottom {
+    height: 665px;
+    background-color: #e8e8e8;
+    background-image: url(img/header_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__bottom_flex {
+    display: flex;
+    align-items: center;
+    padding-top: 224px;
+}
+
+.header__bottom_rectangle {
+    width: 12px;
+    height: 98px;
+    background-color: #f16d7f;
+    margin-right: 12px;
+}
+
+.header_h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #222222;
+}
+
+.header_h1_mini {
+    font-size: 40px;
+}
+
+.fashion {
+    color: #f16d7f;
+}
+
+.content__photo_flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 98px;
+    margin-bottom: 100px;
+}
+
+.content__photo_flex_01 {
+    margin-right: 20px;
+}
+
+
+.content__photo_margin {
+    margin-bottom: 20px;
+}
+
+.content__photo {
+    position: relative;
+}
+
+.content__photo_link {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 16px 18px;
+}
+
+.content__photo_text {
+    font-size: 30px;
+    color: #f16d7f;
+}
