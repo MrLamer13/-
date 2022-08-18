@@ -20,18 +20,14 @@
     display: flex
     justify-content: center
     align-items: center
+    transition: background 1s
 
 .main_content__product__angle:hover
-
     background-color: $color_pink
 
-.main_content__new_arivals__link
+.main_content__product__link
     display: block
-    text-decoration: none
-    font-size: 24px
-    line-height: 24px
-    font-weight: 400
-    color: $color_white
+    @include text(24px, 24px, 400, none, 0, $color_white)
 
 .order__flex
     display: flex
@@ -54,10 +50,7 @@
     align-items: center
 
 .order__desc_h2
-    font-size: 14px
-    line-height: 24px
-    font-weight: 700
-    color: $color_pink
+    @include text(14px, 24px, 700, none, 0, $color_pink)
     margin-top: 73px
     padding-bottom: 15px
     border-bottom: 1px solid $color_grey
@@ -75,18 +68,11 @@
     background-color: $color_pink
 
 .order__desc_h3
-    font-size: 18px
-    line-height: 24px
-    font-weight: 900
-    text-transform: uppercase
-    color: #4d4d4d
+    @include text(18px, 24px, 900, uppercase, 0, #4d4d4d)
     margin-top: 18px
 
 .order__desc_text
-    font-size: 14px
-    line-height: 24px
-    font-weight: 300
-    color: #5e5e5e
+    @include text(14px, 24px, 300, none, 0, #5e5e5e)
     margin-top: 67px
 
 .order__desc_info
@@ -98,20 +84,13 @@
     margin-left: 44px
 
 .order__desc_info_text
-    font-family: Lato
-    font-size: 14px
-    line-height: 24px
-    font-weight: 700
-    color: #2f2f2f
+    @include text(14px, 24px, 700, none, 0, #2f2f2f)
 
 .order__desc_info_text_head
     color: #b9b9b9
 
 .order__desc_price
-    font-size: 24px
-    line-height: 24px
-    font-weight: 700
-    color: $color_pink
+    @include text(24px, 24px, 700, none, 0, $color_pink)
     margin-top: 37px
 
 .order__form
@@ -139,10 +118,7 @@
     flex-direction: column
 
 .order__form_label
-    font-size: 14px
-    line-height: 24px
-    font-weight: 700
-    color: #2f2f2f
+    @include text(14px, 24px, 700, none, 0, #2f2f2f)
 
 .fa-square_red
     color: #ef5b70
@@ -156,10 +132,7 @@
     background-color: $color_white
     border: 1px solid $color_grey
     margin-top: 16px
-    font-size: 13px
-    line-height: 24px
-    font-weight: 400
-    color: #2f2f2f
+    @include text(13px, 24px, 400, none, 0, #2f2f2f)
     padding-left: 15px
 
 .order__form_input::placeholder
@@ -176,16 +149,13 @@
 .order__add
     padding: 8px
     border: 1px solid $color_white
-    text-decoration: none
     display: flex
     align-items: center
     justify-content: center
     background-color: $color_pink
-    color: $color_white
-    font-size: 16px
-    line-height: 1.2
-    font-weight: 700
+    @include text(16px, 1.2, 700, none, 0, $color_white)
     width: 100%
+    transition: all 1s
 
 .order__add:hover
     background-color: $color_white
@@ -200,11 +170,7 @@
     padding-bottom: 72px
 
 .item_box__heading__product
-    font-size: 24px
-    line-height: 20px
-    font-weight: 900
-    text-transform: uppercase
-    color: #4d4d4d
+    @include text(24px, 20px, 900, uppercase, 0, #4d4d4d)
 
-.item__nev_arrival
+.item__product
     margin-bottom: 73px

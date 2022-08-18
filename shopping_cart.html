@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="range-input.css">
-    <title>Catalog</title>
+    <title>Product</title>
 </head>
 
 <body>
@@ -351,455 +350,147 @@
     </section>
 
 
-    <div class="container">
-        <section class="catalog_main">
-            <div class="catalog_accord">
-                <details class="catalog_main_details">
-                    <summary class="catalog_main_details_summary">Category</summary>
-                    <div class="catalog_main_details_item">
-                        <a class="catalog_main_details_item__link" href="#">Accessories</a>
-                        <a class="catalog_main_details_item__link" href="#">Bags</a>
-                        <a class="catalog_main_details_item__link" href="#">Denim</a>
-                        <a class="catalog_main_details_item__link" href="#">Hoodies & Sweatshirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Jackets & Coats</a>
-                        <a class="catalog_main_details_item__link" href="#">Pants</a>
-                        <a class="catalog_main_details_item__link" href="#">Polos</a>
-                        <a class="catalog_main_details_item__link" href="#">Shirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Shoes</a>
-                        <a class="catalog_main_details_item__link" href="#">Shorts</a>
-                        <a class="catalog_main_details_item__link" href="#">Sweaters & Knits</a>
-                        <a class="catalog_main_details_item__link" href="#">T-Shirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Tanks</a>
-                    </div>
+    <section class="shopping_cart_item_box">
+        <div class="container">
+            <header class="shopping_cart_header">
+                <div class="shopping_cart_header_col">Product Details</div>
+                <div class="shopping_cart_header_col">unite Price</div>
+                <div class="shopping_cart_header_col">Quantity</div>
+                <div class="shopping_cart_header_col">shipping</div>
+                <div class="shopping_cart_header_col">Subtotal</div>
+                <div class="shopping_cart_header_col">ACTION</div>
+            </header>
 
-                </details>
 
-                <details class="catalog_main_details">
-                    <summary class="catalog_main_details_summary">BRAND</summary>
-                    <div class="catalog_main_details_item">
-                        <a class="catalog_main_details_item__link" href="#">Accessories</a>
-                        <a class="catalog_main_details_item__link" href="#">Bags</a>
-                        <a class="catalog_main_details_item__link" href="#">Denim</a>
-                        <a class="catalog_main_details_item__link" href="#">Hoodies & Sweatshirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Jackets & Coats</a>
-                        <a class="catalog_main_details_item__link" href="#">Pants</a>
-                        <a class="catalog_main_details_item__link" href="#">Polos</a>
-                        <a class="catalog_main_details_item__link" href="#">Shirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Shoes</a>
-                        <a class="catalog_main_details_item__link" href="#">Shorts</a>
-                        <a class="catalog_main_details_item__link" href="#">Sweaters & Knits</a>
-                        <a class="catalog_main_details_item__link" href="#">T-Shirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Tanks</a>
-                    </div>
+            <div class="shopping_cart_item">
 
-                </details>
-
-                <details class="catalog_main_details">
-                    <summary class="catalog_main_details_summary">dESIGNER</summary>
-                    <div class="catalog_main_details_item">
-                        <a class="catalog_main_details_item__link" href="#">Accessories</a>
-                        <a class="catalog_main_details_item__link" href="#">Bags</a>
-                        <a class="catalog_main_details_item__link" href="#">Denim</a>
-                        <a class="catalog_main_details_item__link" href="#">Hoodies & Sweatshirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Jackets & Coats</a>
-                        <a class="catalog_main_details_item__link" href="#">Pants</a>
-                        <a class="catalog_main_details_item__link" href="#">Polos</a>
-                        <a class="catalog_main_details_item__link" href="#">Shirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Shoes</a>
-                        <a class="catalog_main_details_item__link" href="#">Shorts</a>
-                        <a class="catalog_main_details_item__link" href="#">Sweaters & Knits</a>
-                        <a class="catalog_main_details_item__link" href="#">T-Shirts</a>
-                        <a class="catalog_main_details_item__link" href="#">Tanks</a>
-                    </div>
-
-                </details>
+                <div class="shopping_cart_item_col">
+                    <a href="product.html" class="shopping_cart_item_link">
+                        <img src="img/shopping_cart_item_01.png" alt="photo" class="shopping_cart_item_img">
+                        <div class="shopping_cart_item_desc">
+                            <h3 class="shopping_cart_item_desc_header">Mango People T-shirt</h3>
+                            <p class="shopping_cart_item_desc_text">Color: <span
+                                    class="shopping_cart_item_desc_text_mini">Red</span></p>
+                            <p class="shopping_cart_item_desc_text">Size: <span
+                                    class="shopping_cart_item_desc_text_mini">Xll</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopping_cart_item_col">$150</div>
+                <div class="shopping_cart_item_col">
+                    <input type="number" min="1" max="10" value="2" class="shopping_cart_item_input">
+                </div>
+                <div class="shopping_cart_item_col">FREE</div>
+                <div class="shopping_cart_item_col">$300</div>
+                <div class="shopping_cart_item_col"><i class="fa-solid fa-circle-xmark"></i></div>
 
             </div>
-            <section class="item_box">
 
-                <header class="catalog__item_box__header">
-                    <form oninput="result.value=(range.value)" action="#" class="catalog__item_box__header_form">
-                        <div class="catalog__item_box__header_filter">
-                            <fieldset class="catalog__item_box__header_filter_item">
-                                <legend class="catalog__item_box__header_filter_legend">Trending now</legend>
+            <div class="shopping_cart_item">
 
-                                <div class="catalog__item_box__header_filter_radio_btn">
-                                    <input type="radio" id="contactChoice1" name="contact"
-                                        class="catalog__item_box__header_filter_radio">
-                                    <label for="contactChoice1"
-                                        class="catalog__item_box__header_filter_radio_label">Bohemian</label>
-                                </div>
-                                <p class="catalog__item_box__header_filter_separator">|</p>
-                                <div class="catalog__item_box__header_filter_radio_btn">
-                                    <input type="radio" id="contactChoice2" name="contact"
-                                        class="catalog__item_box__header_filter_radio">
-                                    <label for="contactChoice2"
-                                        class="catalog__item_box__header_filter_radio_label">Floral</label>
-                                </div>
-                                <p class="catalog__item_box__header_filter_separator">|</p>
-                                <div class="catalog__item_box__header_filter_radio_btn">
-                                    <input type="radio" id="contactChoice3" name="contact"
-                                        class="catalog__item_box__header_filter_radio">
-                                    <label for="contactChoice3"
-                                        class="catalog__item_box__header_filter_radio_label">Lace</label>
-                                </div>
-
-                                <div class="catalog__item_box__header_filter_radio_btn">
-                                    <input type="radio" id="contactChoice4" name="contact"
-                                        class="catalog__item_box__header_filter_radio">
-                                    <label for="contactChoice4"
-                                        class="catalog__item_box__header_filter_radio_label">Floral</label>
-                                </div>
-                                <p class="catalog__item_box__header_filter_separator">|</p>
-                                <div class="catalog__item_box__header_filter_radio_btn">
-                                    <input type="radio" id="contactChoice5" name="contact"
-                                        class="catalog__item_box__header_filter_radio">
-                                    <label for="contactChoice5"
-                                        class="catalog__item_box__header_filter_radio_label">Lace</label>
-                                </div>
-                                <p class="catalog__item_box__header_filter_separator">|</p>
-                                <div class="catalog__item_box__header_filter_radio_btn">
-                                    <input type="radio" id="contactChoice6" name="contact"
-                                        class="catalog__item_box__header_filter_radio">
-                                    <label for="contactChoice6"
-                                        class="catalog__item_box__header_filter_radio_label">Bohemian</label>
-                                </div>
-
-                            </fieldset>
-                            <fieldset class="catalog__item_box__header_filter_item">
-                                <legend class="catalog__item_box__header_filter_legend">Size</legend>
-                                <label for="xxs" class="catalog__item_box__header_filter_checkbox"><input id="xxs"
-                                        type="checkbox"> XXS</label>
-                                <label for="xs" class="catalog__item_box__header_filter_checkbox"><input id="xs"
-                                        type="checkbox"> XS</label>
-                                <label for="s" class="catalog__item_box__header_filter_checkbox"><input id="s"
-                                        type="checkbox"> S</label>
-                                <label for="m" class="catalog__item_box__header_filter_checkbox"><input id="m"
-                                        type="checkbox"> M</label>
-                                <label for="l" class="catalog__item_box__header_filter_checkbox"><input id="l"
-                                        type="checkbox"> L</label>
-                                <label for="xl" class="catalog__item_box__header_filter_checkbox"><input id="xl"
-                                        type="checkbox"> XL</label>
-                                <label for="xxl" class="catalog__item_box__header_filter_checkbox"><input id="xxl"
-                                        type="checkbox"> XXL</label>
-                            </fieldset>
-                            <fieldset class="catalog__item_box__header_filter_item">
-                                <legend class="catalog__item_box__header_filter_legend">pRICE</legend>
-
-                                <input id="range" type="range" value="0" step="1" max="500"
-                                    class="styled-slider slider-progress catalog__item_box__header_filter_range">
-                                <p>$<output name="result" for="range">0</output>
-                                </p>
-                            </fieldset>
+                <div class="shopping_cart_item_col">
+                    <a href="product.html" class="shopping_cart_item_link">
+                        <img src="img/shopping_cart_item_02.png" alt="photo" class="shopping_cart_item_img">
+                        <div class="shopping_cart_item_desc">
+                            <h3 class="shopping_cart_item_desc_header">Mango People T-shirt</h3>
+                            <p class="shopping_cart_item_desc_text">Color: <span
+                                    class="shopping_cart_item_desc_text_mini">Red</span></p>
+                            <p class="shopping_cart_item_desc_text">Size: <span
+                                    class="shopping_cart_item_desc_text_mini">Xll</span></p>
                         </div>
-                        <div class="catalog__item_box__header_sort">
-
-                            <label for="sort" class="catalog__item_box__header_sort_label">Sort By</label>
-                            <select id="sort" class="catalog__item_box__header_sort_select">
-                                <option value="name">Name</option>
-                                <option value="category">Category</option>
-                            </select>
-
-                            <label for="show" class="catalog__item_box__header_sort_label">Show</label>
-                            <select id="show" class="catalog__item_box__header_sort_select">
-                                <option value="09">09</option>
-                                <option value="10">10</option>
-                            </select>
-                        </div>
-                    </form>
-                </header>
-
-                <div class="item_box__content">
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_01.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_02.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_03.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_04.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_05.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_06.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_07.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_08.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <a class="item_link" href="product.html">
-                            <img class="item_img" src="img/item_09.png" alt="photo">
-                            <p class="item_text">Mango People T-shirt</p>
-                            <p class="item_text_price">$52.00</p>
-                        </a>
-                        <div class="item_add_box item_add_box_flex">
-                            <div class="item_add_box_"><a href="#" class="item_add">
-                                    <i class="fa fa-light fa-cart-shopping item_add_box__fa-cart-shopping"></i>
-                                    <p class="item_add_text">Add to Cart</p>
-                                </a>
-                            </div>
-
-                            <div class="item_add_box_mini_flex">
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa-solid fa-repeat"></i>
-                                    </a></div>
-                                <div class="item_add_box_mini"><a href="#" class="item_add item_add_mini">
-                                        <i class="fa fa-thin fa-heart"></i></i>
-                                    </a></div>
-                            </div>
-
-                        </div>
-                    </div>
-
+                    </a>
                 </div>
-
-                <div class="catalog__item_box_bottom">
-
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">6</a></li>
-                            <li class="page-item"><a class="page-link" href="#">7</a></li>
-                            <li class="page-item"><a class="page-link" href="#">8</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="catalog__item_box__button"><a href="catalog.html" class="catalog__item_box__link">View
-                            All</a></div>
+                <div class="shopping_cart_item_col">$150</div>
+                <div class="shopping_cart_item_col">
+                    <input type="number" min="1" max="10" value="2" class="shopping_cart_item_input">
                 </div>
+                <div class="shopping_cart_item_col">FREE</div>
+                <div class="shopping_cart_item_col">$300</div>
+                <div class="shopping_cart_item_col"><i class="fa-solid fa-circle-xmark"></i></div>
 
+            </div>
 
+            <div class="shopping_cart_item">
 
-            </section>
-        </section>
-    </div>
+                <div class="shopping_cart_item_col">
+                    <a href="product.html" class="shopping_cart_item_link">
+                        <img src="img/shopping_cart_item_03.png" alt="photo" class="shopping_cart_item_img">
+                        <div class="shopping_cart_item_desc">
+                            <h3 class="shopping_cart_item_desc_header">Mango People T-shirt</h3>
+                            <p class="shopping_cart_item_desc_text">Color: <span
+                                    class="shopping_cart_item_desc_text_mini">Red</span></p>
+                            <p class="shopping_cart_item_desc_text">Size: <span
+                                    class="shopping_cart_item_desc_text_mini">Xll</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="shopping_cart_item_col">$150</div>
+                <div class="shopping_cart_item_col">
+                    <input type="number" min="1" max="10" value="2" class="shopping_cart_item_input">
+                </div>
+                <div class="shopping_cart_item_col">FREE</div>
+                <div class="shopping_cart_item_col">$300</div>
+                <div class="shopping_cart_item_col"><i class="fa-solid fa-circle-xmark"></i></div>
 
-    <section class="offer_mini">
-        <div class="container offer_mini_container">
-            <div class="offer_mini_content">
-                <a href="#" class="offer_mini__item">
-                    <div class="image"><img class="offer_mini__image" src="img/free_delivery.png" alt="image">
-                    </div>
-                    <article class="offer_mini_article">
-                        <h3 class="offer_mini_article__header">Free Delivery</h3>
-                        <p class="offer_mini_article__text">Worldwide delivery on all. Authorit tively morph
-                            next-generation innov tion with extensive models.</p>
-                    </article>
-                </a>
-                <a href="#" class="offer_mini__item">
-                    <div class="image"><img class="offer_mini__image" src="img/sales_n_discounts.png" alt="image">
-                    </div>
-                    <article class="offer_mini_article">
-                        <h3 class="offer_mini_article__header">Sales & discounts</h3>
-                        <p class="offer_mini_article__text">Worldwide delivery on all. Authorit tively morph
-                            next-generation innov tion with extensive models.</p>
-                    </article>
-                </a>
-                <a href="#" class="offer_mini__item">
-                    <div class="image"><img class="offer_mini__image" src="img/quality_assurance.png" alt="image">
-                    </div>
-                    <article class="offer_mini_article">
-                        <h3 class="offer_mini_article__header">Quality assurance</h3>
-                        <p class="offer_mini_article__text">Worldwide delivery on all. Authorit tively morph
-                            next-generation innov tion with extensive models.</p>
-                    </article>
-                </a>
             </div>
 
         </div>
+        </div>
+
+
     </section>
+
+    <section class="shoping_cart_control">
+        <div class="container">
+            <div class="shopping_cart_control_buttons">
+                <div class="shopping-cart_control_batton"><a href="#" class="shopping_cart_control_link">
+                        cLEAR SHOPPING CART
+                    </a></div>
+                <div class="shopping-cart_control_batton"><a href="#" class="shopping_cart_control_link">
+                        cONTINUE sHOPPING
+                    </a></div>
+            </div>
+            <form action="#" class="shopping_cart_control_form">
+                <div class="shoping_cart_control_form_item">
+                    <h3 class="shoping_cart_control_form_item_header">Shipping Adress</h3>
+                    <select name="country" id="country" class="shoping_cart_control_form_item_input">
+                        <option value="01">Bangladesh</option>
+                    </select>
+                    <input type="text" class="shoping_cart_control_form_item_input" placeholder="State">
+                    <input type="text" class="shoping_cart_control_form_item_input" placeholder="Postcode / Zip">
+                    <div class="shopping_cart_control_batton"><a href="#"
+                            class="shopping_cart_control_link shopping_cart_control_form_link">
+                            get a quote
+                        </a></div>
+                </div>
+                <div class="shoping_cart_control_form_item">
+                    <h3 class="shoping_cart_control_form_item_header">coupon discount</h3>
+                    <p class="shoping_cart_control_form_item_text">Enter your coupon code if you have one</p>
+                    <input type="text" class="shoping_cart_control_form_item_input" placeholder="State">
+                    <div class="shopping-cart_control_batton"><a href="#"
+                            class="shopping_cart_control_link shopping_cart_control_form_link">
+                            get a quote
+                        </a></div>
+                </div>
+                <div class="shoping_cart_control_form_item shoping_cart_control_form_item_last">
+                    <p class="shoping_cart_control_form_item_text_subtotal">Sub
+                        total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$900</p>
+                    <p class="shoping_cart_control_form_item_text_total">GRAND
+                        TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">$900</span></p>
+                    <div class="hoping_cart_item_box__button_flex">
+                        <div class="item_box__button hoping_cart_item_box__button"> <a href="#"
+                                class="item_box__link hoping_cart_item_box__link">proceed to checkout</a>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+        </form>
+        </div>
+    </section>
+
+
+
 
 
     <section class="subscribe">
@@ -917,7 +608,7 @@
 
     </footer>
 
-    <script src="range-input.js"></script>
+
 </body>
 
 </html>

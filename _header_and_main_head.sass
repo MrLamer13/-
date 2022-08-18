@@ -22,13 +22,7 @@
     padding-right: 37px
 
 .logo_link
-    text-decoration: none
-    font-size: 27px
-    line-height: 27px
-    font-weight: 300
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #222222
+    @include text(27px, 27px, 300, uppercase, 0.025em, #222222)
 
 .logo_d
     font-weight: 900
@@ -45,10 +39,7 @@
     background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%)
     border: 1px solid #e6e6e6
     border-radius: 3px 0px 0px 3px
-    font-size: 14px
-    font-weight: 300
-    letter-spacing: 0.025em
-    color: #222222
+    @include text(14px, 1, 300, none, 0.025em, #222222)
 
 .browse_button_summary::after
     content: '\25B6'
@@ -91,24 +82,15 @@
     border-top: 1px solid #e8e8e8
 
 .header_item__heading
-    font-size: 14px
-    line-height: 32px
-    font-weight: 400
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #232323
+    @include text(14px, 32px, 400, uppercase, 0.025em, #232323)
     width: 235px
     border-bottom: 1px solid #e8e8e8
     margin-bottom: 10px
 
 .header_item__link
     display: block
-    font-size: 14px
-    line-height: 28px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #646464
-    text-decoration: none
+    @include text(14px, 28px, 400, none, 0.025em, #646464)
+    transition: color 0.5s
 
 .header_item__link:hover
     color: $color_pink
@@ -124,11 +106,7 @@
     height: 38px
     background-color: $color_white
     border: 1px solid #e6e6e6
-    font-size: 14px
-    line-height: 32px
-    font-weight: 300
-    letter-spacing: 0.025em
-    color: #222222
+    @include text(14px, 32px, 300, none, 0.025em, #222222)
     padding-left: 16px
     margin: 0 -1px 0 -1px
 
@@ -142,6 +120,7 @@
     border: 1px solid #e6e6e6
     border-radius: 0px 3px 3px 0px
     color: #a4a4a4
+    transition: border 1s, color 1s
 
 .button_search:hover
     border: 1px solid $color_pink
@@ -170,9 +149,11 @@
     display: flex
     padding: 16px 0
     border-bottom: 1px solid rgba(237, 237, 237, 0.74)
+    transition: box-shadow 1s, background 1s
 
 .basket_box__item:hover
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15)
+    background-color: #f8f3f4
 
 .basket_box__item_link
     display: flex
@@ -184,22 +165,21 @@
     margin-right: 15px
 
 .basket_box__item_info_name
-    font-size: 12px
-    font-weight: 700
-    text-transform: uppercase
-    color: #222222
+    @include text(12px, 1, 700, uppercase, 0, #222222)
     margin-top: 10px
     margin-bottom: 10px
 
 .basket_box__item_info_price
-    font-size: 12px
-    font-weight: 400
-    color: $color_pink
+    @include text(12px, 1, 400, none, 0, $color_pink)
     margin-top: 10px
 
 .basket_box__item_delete
     margin-top: 35px
     color: #c0c0c0
+    transition: color 0.5s
+
+.basket_box__item_delete:hover
+    color: $color_pink
 
 .basket_box__total_price
     display: flex
@@ -208,22 +188,15 @@
     margin-bottom: 32px
 
 .basket_box__total_price_text
-    font-size: 16px
-    font-weight: 700
-    text-transform: uppercase
-    color: #222222
+    @include text(16px, 1, 700, uppercase, 0, #222222)
 
 .basket_box__button
-    text-decoration: none
-    font-size: 14px
-    line-height: 1.2
-    font-weight: 700
-    text-transform: uppercase
-    color: #4a4a4a
+    @include text(14px, 1.2, 700, uppercase, 0, #4a4a4a)
     padding: 19px 74px
     background-color: $color_white
     border: 1px solid $color_grey
     margin-bottom: 11px
+    transition: border 1s, color 1s
 
 .basket_box:before
     content: ""
@@ -252,15 +225,13 @@
     text-decoration: none
     border: 1px solid transparent
     border-radius: 3px
+    transition: all 1s
 
 .account_button_link__fa-caret-down
     color: $color_white
 
 .account_button_link_text
-    font-size: 15px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: $color_white
+    @include text(15px, 1, 400, none, 0.025em, $color_white)
     padding-right: 8px
 
 .account_button_link:hover
@@ -304,12 +275,7 @@
     left: auto
 
 .header__menu_link
-    text-decoration: none
-    font-size: 14px
-    line-height: 26px
-    font-weight: 700
-    text-transform: uppercase
-    color: #222222
+    @include text(14px, 26px, 700, uppercase, 0, #222222)
     padding: 20px 25px
 
 .mega_box
@@ -340,12 +306,7 @@
     margin-right: 0
 
 .mega_heading
-    font-size: 14px
-    line-height: 32px
-    font-weight: 400
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #232323
+    @include text(14px, 32px, 400, uppercase, 0.025em, #232323)
     width: 235px
     border-bottom: 1px solid #e8e8e8
     padding-bottom: 8px
@@ -353,12 +314,8 @@
 
 .mega_link
     display: block
-    font-size: 14px
-    line-height: 28px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #646464
-    text-decoration: none
+    @include text(14px, 28px, 400, none, 0.025em, #646464)
+    transition: color 0.5s
 
 .mega_link:hover
     color: $color_pink
@@ -377,25 +334,14 @@
     height: 100%
 
 .main_head_header_text
-    font-size: 24px
-    line-height: 20px
-    font-weight: 900
-    text-transform: uppercase
-    color: $color_pink
+    @include text(24px, 20px, 900, uppercase, 0, $color_pink)
 
 .breadcrumb
     display: flex
     list-style-type: none
 
-.breadcrumb-item
-    font-size: 14px
-    line-height: 20px
-    font-weight: 300
-    text-transform: uppercase
-
 .breadcrumb-item_links
-    text-decoration: none
-    color: #636363
+    @include text(14px, 20px, 300, uppercase, 0, #636363)
 
 .active
     font-weight: 700

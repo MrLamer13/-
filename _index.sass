@@ -12,11 +12,7 @@
     float: left
 
 .main_content_h1
-    font-size: 60px
-    font-weight: 900
-    letter-spacing: 0.025em
-    color: #222222
-    line-height: 1.2
+    @include text(60px, 1.2, 900, none, 0.025em, #222222)
     margin-top: -15px
 
 .main_content_h1_mini
@@ -46,13 +42,7 @@
     position: absolute
     top: 26px
     left: 0
-    font-size: 18px
-    line-height: 1.2
-    font-weight: 900
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #222222
-    text-decoration: none
+    @include text(18px, 1.2, 900, uppercase, 0.025em, #222222)
     background-color: $color_white
     padding: 16px 18px
 
@@ -65,16 +55,10 @@
     padding-bottom: 60px
 
 .item_box__heading
-    font-size: 30px
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #222222
+    @include text(30px, 1, 700, none, 0.025em, #222222)
 
 .item_box__text
-    font-size: 14px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #9f9f9f
+    @include text(14px, 1, 400, none, 0.025em, #9f9f9f)
 
 .item_box__content
     display: flex
@@ -86,6 +70,7 @@
     background-color: $color_white
     margin-bottom: 40px
     position: relative
+    transition: all 1s
 
 .item_link
     display: block
@@ -94,6 +79,7 @@
 
 .item_img
     width: 100%
+    transition: all 1s
 
 .item:hover
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15)
@@ -102,19 +88,11 @@
     filter: brightness(30%)
 
 .item_text
-    font-size: 13px
-    line-height: 1.2
-    font-weight: 400
-    text-transform: uppercase
-    color: #222222
+    @include text(13px, 1.2, 400, uppercase, 0, #222222)
     padding: 15px 0 0 15px
 
 .item_text_price
-    font-size: 16px
-    line-height: 1.2
-    font-weight: 700
-    text-transform: uppercase
-    color: $color_pink
+    @include text(16px, 1.2, 700, uppercase, 0, $color_pink)
     padding: 15px 0 0 15px
 
 .item_add_box
@@ -131,14 +109,11 @@
 .item_add
     padding: 8px
     border: 1px solid $color_white
-    text-decoration: none
+    @include text(13px, 1.2, 700, none, 0, $color_white)
     pointer-events: all
     display: flex
     align-items: center
-    color: $color_white
-    font-size: 13px
-    line-height: 1.2
-    font-weight: 700
+    transition: all 1s
 
 .item_add:hover
     box-shadow: 0px 0px 10px 0px $color_white
@@ -155,13 +130,8 @@
 .item_box__link
     padding: 18px 24px
     background-color: $color_pink
-    text-decoration: none
-    font-family: Lato
-    font-size: 16px
-    line-height: 54px
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: $color_white
+    @include text(16px, 54px, 700, none, 0.025em, $color_white)
+    transition: all 1s
 
 .item_box__link_fa-arrow-right-long
     padding-left: 9px
@@ -184,11 +154,7 @@
     position: relative
 
 .offer_text
-    font-size: 53.7px
-    line-height: 0.8
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: $color_white
+    @include text(53.7px, 0.8, 700, none, 0.025em, $color_white)
     position: absolute
     top: 146px
     left: 39px
@@ -207,15 +173,7 @@
     margin-left: 33px
 
 .offer_article__header
-    font-size: 20px
-    line-height: 1.2
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #fbfbfb
+    @include text(20px, 1.2, 700, none, 0.025em, #fbfbfb)
 
 .offer_article__text
-    font-size: 14px
-    line-height: 24px
-    font-weight: 300
-    letter-spacing: 0.025em
-    color: #fbfbfb
+    @include text(14px, 24px, 300, none, 0.025em, #fbfbfb)
