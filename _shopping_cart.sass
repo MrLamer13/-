@@ -1,0 +1,133 @@
+.shopping_cart_header
+    display: flex
+    justify-content: space-between
+    @include text(13px, 20px, 700, uppercase, -0.015em, #222222)
+    margin-top: 90px
+    padding-bottom: 20px
+    border-bottom: 1px solid #eaeaea
+
+.shopping_cart_header_col:first-child
+    margin-right: 200px
+
+.shopping_cart_item
+    padding-top: 22px
+    padding-bottom: 25px
+    border-bottom: 1px solid #eaeaea
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include text(13px, 20px, 400, none, 0, #656565)
+    transition: box-shadow 1s, background 1s
+
+.shopping_cart_item:hover
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15)
+    background-color: #f8f3f4
+
+.shopping_cart_item_link
+    display: flex
+    @include text(13px, 1.2, 400, uppercase, 0, #222222)
+
+.shopping_cart_item_desc
+    margin-top: 13px
+    margin-left: 21px
+
+.shopping_cart_item_desc_header
+    margin-bottom: 30px
+
+.shopping_cart_item_desc_text
+    line-height: 20px
+    text-transform: none
+    color: #575757
+    &_mini
+        font-weight: 300
+        color: #6f6e6e
+
+.shopping_cart_item_input
+    width: 54px
+    height: 30px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    text-align: center
+
+.shopping_cart_item_col:last-child
+    margin-right: 15px
+    @include text(16px, 1.2, 400, uppercase, 0, #c0c0c0)
+    transition: color 0.5s
+
+.shopping_cart_item_col:last-child:hover
+    color: $color_pink
+
+.shopping_cart_control_buttons
+    display: flex
+    justify-content: space-between
+    margin-top: 60px
+
+.shopping_cart_control_link
+    padding: 18px 38px
+    border: 1px solid #eaeaea
+    @include text(14px, 1.2, 700, uppercase, 0, #4a4a4a)
+    transition: color 1s, border 1s
+
+.shopping_cart_control_link:hover
+    border: 1px solid $color_pink
+    color: $color_pink
+
+.shopping_cart_control_form
+    display: flex
+    justify-content: space-between
+    margin-top: 63px
+    margin-bottom: 79px
+
+.shoping_cart_control_form_item
+    width: 360px
+    display: flex
+    flex-direction: column
+    &_last
+        background-color: #f5f3f3
+        height: 214px
+
+.shoping_cart_control_form_item_header
+    @include text(16px, 1.2, 700, uppercase, 0 ,#222222)
+    margin-bottom: 22px
+
+.shoping_cart_control_form_item_text
+    @include text(14px, 1.2, 300, none, 0 ,#222222)
+    margin-bottom: 24px
+
+.shoping_cart_control_form_item_input
+    margin-bottom: 20px
+    height: 45px
+    border: 1px solid #eaeaea
+    padding: 0 17px
+    @include text(13px, 1.2, 300, none, 0 ,#222222)
+
+.shopping_cart_control_form_link
+    padding: 10px 15px
+    line-height: 35px
+    font-size: 11px
+
+.shoping_cart_control_form_item_text_subtotal
+    @include text(11px, 1.2, 400, uppercase, 0, #4a4a4a)
+    margin-top: 40px
+    text-align: right
+    margin-right: 41px
+
+.shoping_cart_control_form_item_text_total
+    @include text(16px, 1.2, 700, uppercase, 0, #222222)
+    margin-top: 14px
+    text-align: right
+    margin-right: 41px
+
+.hoping_cart_item_box__button_flex
+    display: flex
+    justify-content: center
+
+.hoping_cart_item_box__button
+    padding-top: 17px
+    border-top: 1px solid #e2e2e2
+    margin-bottom: 0
+    margin-top: 22px
+
+.hoping_cart_item_box__link
+    text-transform: uppercase
+    padding: 18px 41px
