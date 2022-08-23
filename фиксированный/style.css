@@ -1948,4 +1948,149 @@ summary::-webkit-details-marker {
 .hoping_cart_item_box__link {
   text-transform: uppercase;
   padding: 18px 41px;
+}
+
+.chekout_summary {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #222222;
+  text-decoration: none;
+  padding: 32px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.chekout_details[open] > .chekout_summary {
+  border: none;
+}
+
+.chekout_form {
+  display: flex;
+  padding-bottom: 79px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.chekout_form_fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 100%;
+}
+
+.chekout_form_fieldshit_header {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #222222;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.chekout_form_fieldshit_text {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #b3b2b2;
+  text-decoration: none;
+}
+.chekout_form_fieldshit_text_link1 {
+  margin-top: 30px;
+}
+.chekout_form_fieldshit_text_link2 {
+  margin-top: 12px;
+  margin-bottom: 55px;
+}
+.chekout_form_fieldshit_text_red {
+  color: #ff0d0d;
+}
+
+.chekout_form_radio_label {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #222222;
+  text-decoration: none;
+}
+
+.chekout_form_radiobuttons {
+  margin: 25px 0;
+}
+
+.chekout_form_radiobutton:last-of-type {
+  margin-top: 20px;
+}
+
+.chekout_form_fieldshit_login {
+  display: flex;
+}
+
+.chekout_form_input_label {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #222222;
+  text-decoration: none;
+}
+.chekout_form_input_label_email {
+  margin-top: 25px;
+}
+
+.chekout_form_input {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #222222;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  height: 45px;
+  width: 390px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  padding: 0 5px;
+}
+
+.redstar {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #ff0d0d;
+  text-decoration: none;
+}
+
+.chekout_form_fieldshit_login {
+  align-items: center;
+  margin-top: 50px;
+}
+
+.chekout_form_fieldshit_button_text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #222222;
+  text-decoration: none;
+  margin-left: 32px;
+}
+
+.chekout_form_fieldshit_button_link {
+  padding: 16px 55px;
+}
+
+.chekout_margin {
+  margin-bottom: 93px;
 }/*# sourceMappingURL=style.css.map */

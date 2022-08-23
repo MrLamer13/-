@@ -10,8 +10,11 @@ body
 @import vars
 
 .container
-    width: $site_width
+    max-width: $site_width
     margin: 0 auto
+
+.content
+    padding: 0 1%
 
 summary
     display: block
@@ -19,14 +22,10 @@ summary
 summary::-webkit-details-marker
     display: none
 
-@import header_and_main_head
+@import header
 
 @import index
 
 @import subscribe_and_footer
 
-@import product
-
-@import catalog
-
-@import shopping_cart
+@import responsive
