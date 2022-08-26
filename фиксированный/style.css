@@ -15,6 +15,16 @@ body {
   margin: 0 auto;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top {
+  flex-grow: 1;
+}
+
 summary {
   display: block;
 }
@@ -183,6 +193,7 @@ summary::-webkit-details-marker {
   color: #222222;
   text-decoration: none;
   padding-left: 16px;
+  padding-right: 5px;
   margin: 0 -1px 0 -1px;
 }
 
@@ -601,6 +612,11 @@ summary::-webkit-details-marker {
 
 .content__photo {
   position: relative;
+  transition: scale 0.5s;
+}
+
+.content__photo:hover {
+  scale: 1.04;
 }
 
 .content__photo_link {
@@ -838,7 +854,8 @@ summary::-webkit-details-marker {
   height: 438px;
   background-color: rgba(242, 242, 242, 0.5);
   background-image: url(img/subscribe_background.png);
-  background-position: center;
+  background-position: bottom;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -953,6 +970,7 @@ summary::-webkit-details-marker {
   border-radius: 23px 0 0 23px;
   border: none;
   padding-left: 28px;
+  padding-right: 10px;
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
@@ -1701,6 +1719,11 @@ summary::-webkit-details-marker {
   background-color: #fff;
   border: 1px solid transparent;
   transition: all 1s;
+}
+.page-link_active {
+  z-index: 1;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
 }
 
 .page-link:hover {
