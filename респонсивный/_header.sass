@@ -1,0 +1,67 @@
+.header
+    height: 75px
+    background-color: #222222
+    position: relative
+
+.header_container
+    height: 100%
+
+.header_flex
+    display: flex
+    justify-content: space-between
+    @extend .content
+    height: 100%
+
+.header_left
+    display: flex
+    align-items: center
+    height: 100%
+
+.header_right
+    display: flex
+    align-items: center
+    height: 100%
+
+.header_logo
+    margin-right: 41px
+
+.header_chekout
+    margin-left: 33px
+
+.header_cart
+    margin-left: 33px
+
+.header_box
+    background-color: $color_white
+    border: 1px solid #e8e8e8
+    padding: 35px
+    position: absolute
+    z-index: 1
+    top: 75px
+    right: 0px
+    display: flex
+    flex-direction: column
+
+.header_box_heading
+    @include text(14px, 17px, 700, uppercase, 0, #000000)
+    margin-bottom: 24px
+
+.header_item__heading
+    @include text(14px, 17px, 400, uppercase, 0.025em, $color_pink)
+    width: 160px
+
+.header_item__link
+    display: block
+    @include text(14px, 17px, 400, none, 0.025em, #6F6E6E)
+    transition: color 0.5s
+    margin-top: 11px
+    padding-left: 20px
+
+.header_item__link:hover
+    color: $color_pink
+
+.header_item
+    padding-bottom: 22px
+
+.header_item:last-of-type
+    padding-bottom: 0

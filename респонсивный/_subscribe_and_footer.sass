@@ -1,0 +1,116 @@
+.subscribe
+    height: 448px
+    background-color: rgba(244, 244, 244, 0.7)
+    background-image: url(img/subscribe_background.png)
+    background-position: center
+    background-repeat: no-repeat
+
+.subscribe__container
+    height: 100%
+
+.subscribe_flex
+    display: flex
+    height: 100%
+    @extend .content
+
+.subscribe_left
+    flex-basis: 50%
+    height: 100%
+
+.subscribe__figure
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100%
+
+.subscribe__figure_foto
+    object-fit: none
+
+.subscribe__figure_caption
+    margin-top: 12px
+    text-align: center
+    width: 70%
+
+.subscribe__figure_caption_text
+    @include text(20px, 24px, 400, none, 0, #222224)
+    &_italic
+        font-style: italic
+
+.subscribe__form
+    flex-basis: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.subscribe__form_text
+    @include text(18px, 24px, 400, uppercase, 0, #222224)
+    text-align: center
+
+.subscribe__form_text_header
+    @include text(24px, 40px, 700, uppercase, 0, #222224)
+
+.subscribe__form_email
+    display: flex
+    justify-content: center
+    margin-top: 35px
+
+.subscribe__form_email_input
+    width: 50%
+    height: 46px
+    background-color: #e1e1e1
+    border-radius: 23px 0 0 23px
+    border: none
+    padding-left: 28px
+    @include text(14px, 1, 400, none, 0.025em, #222224)
+
+.subscribe__form_email_input::placeholder
+    opacity: 0.67
+    @include text(14px, 54px, 400, none, 0.025em, #222224)
+
+.subscribe__form_email_button
+    padding: 13px 20px
+    background-color: $color_pink
+    border-radius: 0px 23px 23px 0px
+    @include text(14px, 1, 400, none, 0.025em, $color_white)
+    border: 1px solid transparent
+    transition: all 1s
+
+.subscribe__form_email_button:hover
+    background-color: $color_white
+    border: 1px solid $color_pink
+    color: $color_pink
+
+.footer
+    min-height: 79px
+    background-color: #222224
+
+.footer_flex
+    display: flex
+    justify-content: space-between
+    @extend .content
+
+.copyright_text
+    @include text(16px, 19px, 400, none, 0, #FBFBFB)
+    padding-top: 30px
+
+.social
+    display: flex
+    margin-top: 24px
+    justify-content: space-between
+
+.social_link
+    display: flex
+    background-color: $color_white
+    width: 32px
+    height: 32px
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    color: #000000
+    transition: color 1s, background 1s
+    margin-left: 8px
+
+.social_link:hover
+    background-color: $color_pink
+    color: $color_white
