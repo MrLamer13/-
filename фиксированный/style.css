@@ -612,11 +612,12 @@ summary::-webkit-details-marker {
 
 .content__photo {
   position: relative;
-  transition: scale 0.5s;
+  transition: all 0.5s;
 }
 
 .content__photo:hover {
   scale: 1.04;
+  filter: brightness(60%);
 }
 
 .content__photo_link {
@@ -1753,8 +1754,9 @@ summary::-webkit-details-marker {
 }
 
 .shopping_cart_header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 10fr repeat(4, 3fr) 1fr;
+  justify-items: center;
   font-size: 13px;
   line-height: 20px;
   font-weight: 700;
@@ -1768,15 +1770,16 @@ summary::-webkit-details-marker {
 }
 
 .shopping_cart_header_col:first-child {
-  margin-right: 200px;
+  justify-self: start;
 }
 
 .shopping_cart_item {
   padding-top: 22px;
   padding-bottom: 25px;
   border-bottom: 1px solid #eaeaea;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 10fr repeat(4, 3fr) 1fr;
+  justify-items: center;
   align-items: center;
   font-size: 13px;
   line-height: 20px;
@@ -1786,6 +1789,10 @@ summary::-webkit-details-marker {
   color: #656565;
   text-decoration: none;
   transition: box-shadow 1s, background 1s;
+}
+
+.shopping_cart_item_col:first-child {
+  justify-self: start;
 }
 
 .shopping_cart_item:hover {
@@ -1832,7 +1839,6 @@ summary::-webkit-details-marker {
 }
 
 .shopping_cart_item_col:last-child {
-  margin-right: 15px;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
